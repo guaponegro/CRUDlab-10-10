@@ -12,6 +12,10 @@
     <% for(let key in cars) { %>
        <li><%= cars[key] %></li> 
     <% } %>
+    
+    <button>
+        <a href="/cars/<%=id%>/edit">Edit <%=cars.name%></a>
+    </button>
 
     
 </body>

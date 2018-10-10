@@ -30,7 +30,10 @@ router.put("/:id", (req, res) => {
 
 // Show Route
 router.get("/:id", (req, res) => {
-    res.render("show.ejs", {cars:Cars[req.params.id]});
-})
+    res.render("show.ejs", {
+        cars:Cars[req.params.id],
+        id: req.params.id
+    });
+});
 
 module.exports = router;
