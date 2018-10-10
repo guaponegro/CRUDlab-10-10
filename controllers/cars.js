@@ -28,4 +28,9 @@ router.put("/:id", (req, res) => {
     res.redirect("/cars")
 });
 
+// Show Route
+router.get("/:id", (req, res) => {
+    res.render("show.ejs", {cars:Cars[req.params.id]});
+})
+
 module.exports = router;

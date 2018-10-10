@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>List of Cars</h1>
+
     <ul class="cars">
         <!-- Index Loop -->
         <% for(let i = 0; i < cars.length; i++) { %>
-            <li><%= cars[i].name %></li>
+            <li><a href="/cars/<%=i%>"><%= cars[i].name %></a></li>
 
         <!-- Delete Form -->
         <form action="/cars/<%=i%>?_method=DELETE" method="POST">
