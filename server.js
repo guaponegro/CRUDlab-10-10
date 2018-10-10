@@ -7,7 +7,7 @@ const port = 3000;
 
 
 
-// middle ware
+// Middle Ware
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride("_method"));
 app.use("/cars", carsController)
@@ -18,7 +18,7 @@ app.use("/cars", carsController)
 
 
 
-
+// Listening Port Function
 app.listen(port, function() {
     console.log("App is running on port: ", port);
   });
